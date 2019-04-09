@@ -10,14 +10,17 @@ public class Exam5_5 {
 
 		int sum = 0;
 		double avg = 0.0;
+		
+		int count = 0;
 
 		// 코드 작성
 		for(int i = 0 ; i < arr.length ; i++) {
-			for (int j = 0; j < arr[i].length; j++) {
+			for (int j = 0; j < arr[i].length; j++) { // 반드시 arr[i]라고 해야 한다.
 				sum = sum + arr[i][j];
+				count++;
 			}
 		}
-		avg = (double)(sum) / 10;
+		avg = (double)(sum) / count;
 
 		System.out.println("합 : " + sum);
 		System.out.println("평균 : " + avg);
